@@ -1,5 +1,0 @@
-Player name: Sam
- Total games played: 
- Total wins: 
- Total loses: 
- Total ties: 

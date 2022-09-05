@@ -17,30 +17,27 @@ while select:
 
 #################################################
 
-    if select == "A" or select == "a":
+    if select.lower() == "a":
         #start new game
 
         #randomly chooses a word from the list
         randomChoose()
 
-        #start game
-        #startGame()
-
 #################################################
 
-    if select == "B" or select == "b":
+    if select.lower() == "b":
         #end program
         print("Goodbye")
         exit()
 
 #################################################
 
-    if select=="C" or select == "c":
+    if select.lower() == "c":
         #display player stats
         showStats()
 
 #################################################
 
-    if select=="D" or select == "d":
+    if select.lower() == "d":
         #create new player
         createPlayer()
