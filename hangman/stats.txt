@@ -1,7 +1,5 @@
-Player name: Aegis
 Total games played: 2
  Total games lost: 1
- Total games won: 1Player name: Teldryn
-Total games played: 3
- Total games lost: 0
- Total games won: 3
+ Total games won: 1Total games played: 1
+ Total games lost: 1
+ Total games won: 0

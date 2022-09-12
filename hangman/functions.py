@@ -5,7 +5,16 @@ gamesPlayed = 0
 gamesWon = 0
 gamesLost = 0
 
-# randomly chooses word
+#reset counters
+def reset():
+    global gamesPlayed
+    gamesPlayed = 0
+    global gamesWon
+    gamesWon = 0
+    global gamesLost
+    gamesLost = 0
+
+#randomly chooses word
 def randomChoose():
     with open("input.txt", "r") as file:
         allText = file.read()
@@ -25,6 +34,8 @@ def stats(gamesPlayed,gamesLost,gamesWon):
     f = open("stats.txt", "a")
     f.write("Total games played: " + totalGamesPlayed + "\n Total games lost: " + totalGamesLost + "\n Total games won: " + totalGamesWon)
     f.close()
+    reset()
+    
 
 #hangman game
 def startGame(secretWord):
@@ -87,16 +98,26 @@ def startGame(secretWord):
 
     #list of letters in secret word
     lst = []
+    #letters the player correctly guesses
+    lst2 = []
  
+    #split secret word into letters
     for letter in secretWord:
         lst.append(letter)
- 
-    #see secret word for debugging
-    #print(lst)
 
-    #while player still has guesses left
+    #create array to show player how many letters to guess
+    for letter in secretWord:
+        lst2.append("_")
+
+    #while player still has guesses left...
     while strikes < 6:
+        #print(lst)
+        #print(lst2)
+
+        #show hangman pictures
         print(hangMan[x])
+        #show how secret word length
+        print(' '.join(lst2))
         guess = input("Enter a letter: ")
         guess = guess.lower()
 
@@ -107,12 +128,23 @@ def startGame(secretWord):
             #guess is a letter
             if guess in secretWord:
                 print("Correct!")
-                while guess in lst:
-                    lst.remove(guess)
-                    print(lst)
 
-                if len(lst) == 0:
-                    print("All letters guessed!")
+                while guess in lst:
+                    #get index of guess
+                    guessIndex = lst.index(guess)
+
+                    #reveal index to player
+                    lst2.pop(guessIndex)
+                    lst2.insert(guessIndex,guess)
+
+                    #remove corresponding index from secret word
+                    lst.remove(guess)
+                    lst.insert(guessIndex,"0")
+
+                #see if all letters guessed
+                s = set(lst)
+                if (len(s) == 1):
+                    print("All letters guessed correctly!")
                     strikes = 7 #get out of loop
                 else:
                     print("Still guesses left")
@@ -162,4 +194,4 @@ def showStats():
 def createPlayer():
     name = input("Enter player name: ")
     file = open("stats.txt", "a")
-    file.write("Player name: " + name + "\n")
+    file.write("\n" + "Player name: " + name + "\n")
