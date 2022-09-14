@@ -1,5 +1,0 @@
-
-Player name: Aegis
-Total games played: 3
- Total games lost: 2
- Total games won: 1

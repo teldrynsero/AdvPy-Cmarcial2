@@ -1,5 +1,7 @@
 import random
 
+from playsound import playsound
+
 #for tracking player stats
 gamesPlayed = 0
 gamesWon = 0
@@ -42,6 +44,7 @@ def stats(gamesPlayed,gamesLost,gamesWon):
 #hangman game
 def startGame(secretWord):
     print("Game starting...")
+    playsound('start.wav')
     #hangman images
     hangMan = ["""
     ________
@@ -126,10 +129,12 @@ def startGame(secretWord):
        #guess is symbol or number (reject)
         if not guess.isalpha():
             print("Non-letter guesses are invalid: try again!")
+            playsound('wrong.wav')
         else:
             #guess is a letter (accept)
             if guess in secretWord:
                 print("Correct!")
+                playsound('correct.wav')
 
                 while guess in lst:
                     #get index of guess
@@ -152,6 +157,7 @@ def startGame(secretWord):
                     print("Still letters to guess left...")
             else:
                 print("Wrong!")
+                playsound('wrong.wav')
                 strikes += 1
                 x += 1
 
@@ -165,6 +171,7 @@ def startGame(secretWord):
         gamesWon += 1
 
         print("YOU WON! \n The secret word was " + secretWord)
+        playsound('win.wav')
 
     #GAME OVER you lost
     if strikes == 6:
@@ -176,14 +183,15 @@ def startGame(secretWord):
         gamesLost += 1
 
         print("GAME OVER! \n The secret word was " + secretWord)
+        playsound('lost.wav')
 
     answer = input("Want to play again? y/n \n")
     if answer.lower() == 'y':
-        print("Starting new game...")
         #start a new game with new word
         randomChoose()
     else:
         print("Thank you for playing hangman! \n Returning to main menu...")
+        playsound('exit.wav')
         #record player stats from game
         stats(gamesPlayed,gamesLost,gamesWon)
 
