@@ -34,6 +34,8 @@ def stats(gamesPlayed,gamesLost,gamesWon):
     f = open("stats.txt", "a")
     f.write("Total games played: " + totalGamesPlayed + "\n Total games lost: " + totalGamesLost + "\n Total games won: " + totalGamesWon)
     f.close()
+
+    #reset game counters
     reset()
     
 
@@ -116,16 +118,16 @@ def startGame(secretWord):
 
         #show hangman pictures
         print(hangMan[x])
-        #show how secret word length
+        #show secret word length
         print(' '.join(lst2))
         guess = input("Enter a letter: ")
         guess = guess.lower()
 
-       #guess was a symbol or number; reject it and ask for input again
+       #guess is symbol or number (reject)
         if not guess.isalpha():
             print("Non-letter guesses are invalid: try again!")
         else:
-            #guess is a letter
+            #guess is a letter (accept)
             if guess in secretWord:
                 print("Correct!")
 
@@ -144,10 +146,10 @@ def startGame(secretWord):
                 #see if all letters guessed
                 s = set(lst)
                 if (len(s) == 1):
-                    print("All letters guessed correctly!")
+                    print("\n All letters guessed correctly!")
                     strikes = 7 #get out of loop
                 else:
-                    print("Still guesses left")
+                    print("Still letters to guess left...")
             else:
                 print("Wrong!")
                 strikes += 1

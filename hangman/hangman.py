@@ -1,5 +1,7 @@
 from functions import randomChoose, startGame, createPlayer, showStats
 
+from playsound import playsound
+
 select = True
 
 #display options menu
@@ -27,7 +29,7 @@ while select:
 
     if select.lower() == "b":
         #end program
-        print("Goodbye")
+        print("Exiting program...")
         exit()
 
 #################################################
