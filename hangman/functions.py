@@ -126,7 +126,7 @@ def startGame(secretWord):
         guess = input("Enter a letter: ")
         guess = guess.lower()
 
-       #guess is symbol or number (reject)
+        #guess is symbol or number (reject)
         if not guess.isalpha():
             print("Non-letter guesses are invalid: try again!")
             playsound('wrong.wav')

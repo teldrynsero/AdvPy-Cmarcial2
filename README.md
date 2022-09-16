@@ -22,3 +22,14 @@
 | Location | https://github.com/teldrynsero/AdvPy-Cmarcial2/tree/main/project0 |
 | Self Grade | 100/100 |
 | Notes | Completed all setup steps |
+
+### Project 1
+
+| Name | Value |
+| --- | --- |
+| Description | Game: Hangman |
+| Due Date | 16-Oct-22 |
+| Status | Working |
+| Location | https://github.com/teldrynsero/AdvPy-Cmarcial2/tree/main/hangman |
+| Self Grade | - |
+| Notes | hangman game with audio sounds |
