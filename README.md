@@ -31,5 +31,5 @@
 | Due Date | 16-Oct-22 |
 | Status | Working |
 | Location | https://github.com/teldrynsero/AdvPy-Cmarcial2/tree/main/hangman |
-| Self Grade | - |
-| Notes | hangman game with audio sounds |
+| Self Grade | 100/100 |
+| Notes | hangman game with audio sounds / all assignment requirements met |
