@@ -185,8 +185,8 @@ def startGame(secretWord):
         print("GAME OVER! \n The secret word was " + secretWord)
         playsound('lost.wav')
 
-    answer = input("Want to play again? y/n \n")
-    if answer.lower() == 'y':
+    toContinue = input("Want to play again? y/n \n")
+    if toContinue.lower() == 'y':
         #start a new game with new word
         randomChoose()
     else:
