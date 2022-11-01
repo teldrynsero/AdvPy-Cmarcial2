@@ -1,29 +1,36 @@
-#get car positions at the 3 intervals
-times = input("")
-times = times.split(" ")
+#what did the car do?
+def calculate(difference1,difference2):
+    if difference1 > 0 and difference2 < 0 or difference1 < 0 and difference2 > 0:
+        print("turned")
+        return "turned"
 
-#difference between 2 and 1 intervals
-difference1 = int(times[1]) - int(times[0])
+    difference1 = abs(difference1)
+    difference2 = abs(difference2)
 
-#difference between 3 and 2 intervals
-difference2 = int(times[2]) - int(times[1])
+    if difference1 == difference2:
+        print("cruised")
+        return "cruised"
 
-#print(difference1)
-#print(difference2)
+    elif difference2 > difference1:
+        print("accelerated")
+        return "accelerated"
 
-if difference1 > 0 and difference2 < 0 or difference1 < 0 and difference2 > 0:
-    print("turned")
-    exit()
+    elif difference1 > difference2:
+        print("braked")
+        return "braked"
 
-difference1 = abs(difference1)
-difference2 = abs(difference2)
+def start():
+    #get car positions at the 3 intervals
+    times = input("")
+    times = times.split(" ")
 
-if difference1 == difference2:
-    print("cruised")
+    #difference between 2 and 1 intervals
+    difference1 = int(times[1]) - int(times[0])
 
-elif difference2 > difference1:
-    print("accelerated")
+    #difference between 3 and 2 intervals
+    difference2 = int(times[2]) - int(times[1])
 
-elif difference1 > difference2:
-    print("braked")
+    calculate(difference1,difference2)
 
+if __name__ == "__main__":
+    start()
