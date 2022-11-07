@@ -9,7 +9,7 @@
 | Description | Kattis's One Chicken Per Person! |
 | Due Date | 18-Nov-22 |
 | Status | Done |
-| Location | https://github.com/teldrynsero/AdvPy-Cmarcial2/tree/main/Kattis/chicken |
+| Location | https://github.com/teldrynsero/AdvPy-Cmarcial2/tree/main/kattis/chicken |
 | Difficulty | 2.0 |
 | Notes | Kattis link: https://open.kattis.com/problems/onechicken |
 
@@ -20,7 +20,7 @@
 | Description | Kattis's Howl |
 | Due Date | 18-Nov-22 |
 | Status | Done |
-| Location | https://github.com/teldrynsero/AdvPy-Cmarcial2/tree/main/Kattis/howl |
+| Location | https://github.com/teldrynsero/AdvPy-Cmarcial2/tree/main/kattis/howl |
 | Difficulty | 2.0 |
 | Notes | Kattis link: https://open.kattis.com/problems/howl |
 
@@ -31,7 +31,7 @@
 | Description | Kattis's Test Drive |
 | Due Date | 18-Nov-22 |
 | Status | Done |
-| Location | https://github.com/teldrynsero/AdvPy-Cmarcial2/tree/main/Kattis/testdrive |
+| Location | https://github.com/teldrynsero/AdvPy-Cmarcial2/tree/main/kattis/testdrive |
 | Difficulty | 1.9 |
 | Notes | Kattis link: https://open.kattis.com/problems/testdrive |
 
@@ -42,6 +42,6 @@
 | Description | Kattis's Vauvau |
 | Due Date | 18-Nov-22 |
 | Status | Done |
-| Location | https://github.com/teldrynsero/AdvPy-Cmarcial2/tree/main/Kattis/vauvau |
+| Location | https://github.com/teldrynsero/AdvPy-Cmarcial2/tree/main/kattis/vauvau |
 | Difficulty | 1.9 |
 | Notes | Kattis link: https://open.kattis.com/problems/vauvau |
