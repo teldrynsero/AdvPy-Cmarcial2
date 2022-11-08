@@ -32,7 +32,7 @@
 | Status | Done |
 | Location | https://github.com/teldrynsero/AdvPy-Cmarcial2/tree/main/hangman |
 | Self Grade | 100/100 |
-| Notes | hangman game with audio sounds / all assignment requirements met |
+| Notes | Hangman game with audio sounds / all assignment requirements met |
 
 ### Project 2
 
@@ -42,5 +42,5 @@
 | Due Date | 18-Nov-22 |
 | Status | Working |
 | Location | https://github.com/teldrynsero/AdvPy-Cmarcial2/tree/main/kattis |
-| Self Grade | - |
-| Notes | - |
+| Self Grade | 100/100 |
+| Notes | All assignment requirements met |
