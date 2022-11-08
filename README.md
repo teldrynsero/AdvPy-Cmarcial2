@@ -40,7 +40,7 @@
 | --- | --- |
 | Description | Kattis |
 | Due Date | 18-Nov-22 |
-| Status | Working |
+| Status | Done |
 | Location | https://github.com/teldrynsero/AdvPy-Cmarcial2/tree/main/kattis |
 | Self Grade | 100/100 |
 | Notes | All assignment requirements met |
