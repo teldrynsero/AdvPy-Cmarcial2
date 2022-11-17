@@ -44,3 +44,14 @@
 | Location | https://github.com/teldrynsero/AdvPy-Cmarcial2/tree/main/kattis |
 | Self Grade | 100/100 |
 | Notes | All assignment requirements met |
+
+### Project 3
+
+| Name | Value |
+| --- | --- |
+| Description | Final |
+| Due Date | 13-Dec-22 |
+| Status | WIP |
+| Location | https://github.com/teldrynsero/AdvPy-Cmarcial2/tree/main/final |
+| Self Grade | - |
+| Notes | Kattis Problems |
