@@ -51,7 +51,7 @@
 | --- | --- |
 | Description | Final |
 | Due Date | 13-Dec-22 |
-| Status | WIP |
+| Status | Done |
 | Location | https://github.com/teldrynsero/AdvPy-Cmarcial2/tree/main/final |
-| Self Grade | - |
-| Notes | Kattis Problems |
+| Self Grade | 100/100 |
+| Notes | Kattis Problems and all assignment requirements met |
